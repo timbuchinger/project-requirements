@@ -1,2 +1,4 @@
 - Documentation
   - markdownlint for Markdown style enforcement
+- Version Control
+  - Use resources/.gitignore as the repository's .gitignore file

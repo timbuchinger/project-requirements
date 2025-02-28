@@ -152,4 +152,6 @@ The format is flexible - focus on capturing valuable insights that help me work 
 
 REMEMBER: After every memory reset, I begin completely fresh. The Memory Bank is my only link to previous work. It must be maintained with precision and clarity, as my effectiveness depends entirely on its accuracy.
 
+If changes are made to the way the applicaiton is run, such as command-line parameters, update README.md in the root of the workspace to reflect that.
+
 At the end of each task, provide a Git commit message summarizing the changes in no more than 72 characters. The first letter of the commit message should be capitablized. Present this to the user in the form of 'Git Commit: <message>'.
