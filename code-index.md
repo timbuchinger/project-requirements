@@ -1,7 +1,7 @@
 # Cline Codebase Indexing Prompt
 
 ## Goal  
-Index this codebase by generating a hierarchical documentation structure that follows the folder structure of the project. The goal is to create a table of contents that enables efficient retrieval of relevant code context.  
+Index this codebase by generating a hierarchical documentation structure that follows the folder structure of the project. The goal is to create a table of contents that enables efficient retrieval of relevant code context.
 
 ## Structure  
 
@@ -31,7 +31,27 @@ Index this codebase by generating a hierarchical documentation structure that fo
 - Use proper Markdown syntax for headings, lists, and links.  
 - Format code snippets using triple backticks (```) and specify the language when applicable.  
 
+## Progress Tracking & Session Management  
+To ensure progress is tracked across multiple sessions and prevent redundant processing, implement the following:
+
+### 1. Incremental Processing & Checkpointing  
+- Maintain a progress log tracking indexed directories and files.  
+- If interrupted, **resume from the last completed directory** rather than restarting.  
+- Store progress metadata in a file to allow seamless continuation.
+
+### 2. Session Metadata  
+- Save session metadata, including timestamps and indexed sections, to **avoid redundant processing**.  
+- Store metadata in a file (`indexing_progress.json`) logging completed sections and pending work.
+
+### 3. Output Verification & Consistency Checks  
+- Before adding new entries, cross-check against existing documentation to prevent redundant indexing.  
+- Ensure all previously indexed sections are included and consistent.
+
+### 4. Logging & Summary Reports  
+- At the end of each session, generate a Markdown summary (`indexing_log.md`) listing newly indexed directories and pending tasks.  
+- This summary should be easy to review and guide subsequent indexing sessions.  
+
 ## Expected Outcome  
 The final structure should allow for intuitive searches, enabling retrieval of relevant sections when queried about specific features, reports, or modules.  
 The documentation should **mirror the folder structure exactly, traversing all directories and subdirectories recursively.**  
-All generated files should be formatted as Markdown for consistency and readability.  
+All generated files should be formatted as Markdown for consistency and readability.
