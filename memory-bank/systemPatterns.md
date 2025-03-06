@@ -7,34 +7,34 @@
 - Comprehensive coverage of tools and best practices
 
 ## File Organization
-```
+```txt
 project-requirements/
-├── memory-bank/          # Project context and status
+├── memory-bank/       # Project context and status
 │   ├── projectbrief.md
 │   ├── techContext.md
 │   ├── systemPatterns.md
 │   ├── progress.md
 │   └── activeContext.md
-├── guidelines/           # Technology-specific guidelines
-│   ├── frontend/        # Frontend development
+├── guidelines/        # Technology-specific guidelines
+│   ├── frontend/     # Frontend development
 │   │   ├── vue.md
-│   │   └── assets/     # Frontend-specific resources
-│   ├── backend/         # Backend development
+│   │   └── assets/  # Frontend resources
+│   ├── backend/      # Backend development
 │   │   ├── python.md
 │   │   ├── postgres.md
-│   │   └── assets/     # Backend-specific resources
-│   ├── devops/         # DevOps and infrastructure
+│   │   └── assets/  # Backend resources
+│   ├── devops/       # DevOps and infrastructure
 │   │   ├── kubernetes.md
-│   │   └── assets/     # DevOps-specific resources
-│   └── shell/          # Shell scripting
+│   │   └── assets/  # DevOps resources
+│   └── shell/        # Shell scripting
 │       ├── bash.md
 │       └── powershell.md
-├── architecture/        # Architecture documentation
-│   ├── principles/     # Architecture principles
+├── architecture/     # Architecture documentation
+│   ├── principles/  # Architecture principles
 │   │   ├── general_principles.md
 │   │   └── solid_principles.md
-│   └── assets/         # Architecture diagrams
-└── README.md           # Project overview
+│   └── assets/      # Architecture diagrams
+└── README.md        # Project overview
 ```
 
 ## Guidelines Pattern
@@ -67,69 +67,45 @@ mindmap
             Version control
 ```
 
-## Documentation Flow
+## Documentation Lifecycle
 ```mermaid
 flowchart TD
-    subgraph Creation
+    subgraph Create
         New[New Content] --> Review1[Initial Review]
         Review1 --> Examples[Add Examples]
     end
 
-    subgraph Validation
-        Examples --> Verify[Technical Verification]
-        Verify --> Format[Format Check]
+    subgraph Validate
+        Examples --> Tech[Technical Review]
+        Tech --> Format[Format Check]
+        Format --> Quality[Quality Check]
     end
 
-    subgraph Publication
-        Format --> Merge[Merge to Main]
-        Merge --> Monitor[Monitor Feedback]
+    subgraph Deploy
+        Quality --> Merge[Merge to Main]
+        Merge --> Monitor[Monitor & Maintain]
     end
 
     Monitor -->|Updates Needed| New
 ```
 
-## Maintenance and Quality Control
-```mermaid
-stateDiagram-v2
-    [*] --> Review
-    Review --> Updates: Changes Needed
-    Review --> Current: No Changes Needed
-    
-    Updates --> Validation
-    Validation --> Implementation
-    Implementation --> Testing
-    
-    Testing --> Deployment
-    Deployment --> Current
-    
-    Current --> Review: Review Cycle
-    
-    state Testing {
-        [*] --> Technical
-        Technical --> Format
-        Format --> Examples
-        Examples --> [*]
-    }
-```
-
-## Implementation Standards
+## Standards and Implementation
 ```mermaid
 flowchart LR
-    subgraph Standards
-        Config[Tool Configurations]
-        Setup[Setup Instructions]
-        Patterns[Common Patterns]
-        Error[Error Handling]
-        Testing[Testing Approach]
+    subgraph Content
+        Config[Configuration]
+        Setup[Setup Guide]
+        Patterns[Patterns]
+        Testing[Testing]
     end
 
-    subgraph Validation
-        Review[Technical Review]
-        Verify[Verify Examples]
-        Check[Quality Check]
+    subgraph Process
+        Review[Review]
+        Verify[Verify]
+        Deploy[Deploy]
     end
 
-    Standards --> Validation
-    Validation -->|Approved| Docs[Documentation]
-    Validation -->|Needs Work| Standards
+    Content --> Process
+    Process -->|Approved| Docs[Documentation]
+    Process -->|Revise| Content
 ```

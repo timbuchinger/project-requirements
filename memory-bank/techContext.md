@@ -33,6 +33,7 @@ flowchart TD
 ## Current Technology Stack
 
 ### Frontend (Vue.js)
+
 - Vue.js 3 with TypeScript
 - Vite for build tooling
 - TailwindCSS for styling
@@ -40,6 +41,7 @@ flowchart TD
 - Vitest for testing
 
 ### Backend (Python)
+
 - Python 3.11+
 - uv for package management
 - pytest for testing
@@ -47,45 +49,22 @@ flowchart TD
 - Ruff for linting
 
 ### Documentation
+
 - Markdown format
 - markdownlint for style enforcement
 
-## Development Workflow
-```mermaid
-flowchart LR
-    subgraph Local
-        Code[Code Changes] --> Hooks[Pre-commit Hooks]
-        Hooks --> Tests[Run Tests]
-    end
+## Development Environment
+- VSCode IDE
+- Git with pre-commit hooks
 
-    subgraph Quality
-        Format[Format Code]
-        Lint[Lint Code]
-        TypeCheck[Type Check]
-    end
+## Project Standards
+1. Configuration
+   - pyproject.toml (Python)
+   - tailwind.config.js (Frontend)
+   - .markdownlint.json (Documentation)
 
-    Hooks --> Quality
-    Tests --> Commit[Git Commit]
-
-    subgraph Coverage
-        Test[Test Coverage >= 80%]
-    end
-
-    Tests --> Coverage
-```
-
-## Development Tools
-- VSCode as primary IDE
-- Pre-commit hooks for code quality
-- Version control with Git
-
-## Configuration Standards
-- Use of pyproject.toml for Python projects
-- Tailwind config for frontend styling
-- Consistent formatting rules across projects
-
-## Quality Assurance
-- Minimum 80% test coverage requirement
-- Automated linting and formatting
-- Type safety enforcement
-- Regular dependency updates
+2. Quality Requirements
+   - 80% test coverage minimum
+   - Automated linting/formatting
+   - Type safety
+   - Regular updates
