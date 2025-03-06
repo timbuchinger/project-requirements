@@ -1,12 +1,14 @@
 # SOLID Principles Architecture Guidelines
 
 ## Overview
-This document outlines how to apply SOLID principles in our projects, with practical examples using our Vue.js and Python tech stack. These principles help create maintainable, flexible, and robust software systems.
+This document outlines how to apply SOLID principles in our projects, with practical examples using our Vue.js and Python tech 
+stack. These principles help create maintainable, flexible, and robust software systems.
 
 ## Single Responsibility Principle (SRP)
 "A class/module should have only one reason to change"
 
 ### Guidelines
+
 - Each class/module should focus on a single, well-defined task
 - Break down complex functionality into smaller, focused components
 - Consider responsibilities in terms of actors who might request changes
@@ -105,6 +107,7 @@ export default {
 "Software entities should be open for extension but closed for modification"
 
 ### Guidelines
+
 - Use interfaces and abstract classes to define contracts
 - Implement new functionality through inheritance or composition
 - Utilize strategy pattern for varying behaviors
@@ -183,6 +186,7 @@ export default {
 "Subtypes must be substitutable for their base types"
 
 ### Guidelines
+
 - Ensure derived classes can replace base classes without breaking functionality
 - Maintain consistent behavior in inheritance hierarchies
 - Honor contracts defined by base classes
@@ -267,6 +271,7 @@ const ConfirmButton = {
 "Clients should not be forced to depend on interfaces they don't use"
 
 ### Guidelines
+
 - Create focused, minimal interfaces
 - Split large interfaces into smaller ones
 - Design interfaces based on client needs
@@ -373,6 +378,7 @@ const UserAddressForm = {
 "High-level modules should not depend on low-level modules. Both should depend on abstractions"
 
 ### Guidelines
+
 - Depend on abstractions rather than concrete implementations
 - Use dependency injection
 - Define clear interfaces for components
@@ -450,6 +456,7 @@ export default {
 ```
 
 ## Implementation Checklist
+
 - [ ] Apply SRP by breaking down large classes/components
 - [ ] Use interfaces/abstract classes to make code extensible (OCP)
 - [ ] Ensure inheritance hierarchies are sound (LSP)
@@ -460,6 +467,7 @@ export default {
 - [ ] Document architectural decisions
 
 ## Common Pitfalls
+
 1. Over-engineering simple solutions
 2. Creating unnecessary abstractions
 3. Breaking LSP in pursuit of features
@@ -473,6 +481,7 @@ export default {
 
 ## Review Process
 Regular reviews should check for:
+
 - SOLID principles compliance
 - Code maintainability
 - Test coverage

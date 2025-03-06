@@ -1,29 +1,34 @@
 # General Architecture Principles
 
 ## Overview
-This document outlines our general architecture principles and best practices. These guidelines help maintain code quality, performance, and maintainability across all projects.
+This document outlines our general architecture principles and best practices. These guidelines help maintain code quality, 
+performance, and maintainability across all projects.
 
 ## Core Principles
 
 ### Write Only What's Needed (YAGNI)
+
 - Implement features only when they're required
 - Avoid speculative functionality
 - Focus on current requirements
 - Document potential future needs without implementing them
 
 ### Avoid Premature Optimization
+
 - Write clear, maintainable code first
 - Profile before optimizing
 - Optimize only when performance issues are identified
 - Document performance requirements and benchmarks
 
 ### Keep It Simple (KISS)
+
 - Choose straightforward solutions over complex ones
 - Prioritize readability and maintainability
 - Break complex problems into simpler parts
 - Document complex decisions and their rationale
 
 ### Plan for Extensibility
+
 - Design modules with clear interfaces
 - Use dependency injection for flexibility
 - Create abstraction layers when appropriate
@@ -49,6 +54,7 @@ project/
 ```
 
 ### Best Practices
+
 1. Group related functionality together
 2. Separate concerns appropriately
 3. Maintain consistent file naming
@@ -57,12 +63,14 @@ project/
 ## Design Patterns
 
 ### When to Use Patterns
+
 - Solve common problems with proven solutions
 - Choose patterns based on specific needs
 - Avoid over-architecting with unnecessary patterns
 - Document pattern usage and rationale
 
 ### Recommended Patterns
+
 1. Repository Pattern
    - For data access abstraction
    - Separates business logic from data access
@@ -84,6 +92,7 @@ project/
    - Enables flexible communication
 
 ### Anti-patterns to Avoid
+
 1. God Objects
    - Classes that know/do too much
    - Violates single responsibility
@@ -97,6 +106,7 @@ project/
 ## Error Handling
 
 ### Principles
+
 1. Be explicit about errors
 2. Use appropriate error types
 3. Provide meaningful error messages
@@ -123,6 +133,7 @@ class UserService:
 ## Testing Architecture
 
 ### Test Categories
+
 1. Unit Tests
    - Test individual components
    - Mock dependencies
@@ -139,6 +150,7 @@ class UserService:
    - User perspective
 
 ### Coverage Requirements
+
 - Minimum 80% code coverage
 - Critical paths 100% covered
 - Document uncovered code
@@ -147,12 +159,14 @@ class UserService:
 ## Performance Considerations
 
 ### Early Stage
+
 1. Choose appropriate data structures
 2. Use efficient algorithms
 3. Consider data access patterns
 4. Plan for scaling
 
 ### Optimization Process
+
 1. Measure current performance
 2. Identify bottlenecks
 3. Implement targeted improvements
@@ -162,6 +176,7 @@ class UserService:
 ## Security Architecture
 
 ### Core Principles
+
 1. Defense in depth
 2. Principle of least privilege
 3. Secure by default
@@ -192,12 +207,14 @@ class UserManager:
 ## Documentation Requirements
 
 ### Code Documentation
+
 - Clear function/method signatures
 - Purpose and usage examples
 - Important considerations
 - Edge cases and limitations
 
 ### Architecture Documentation
+
 - System overview
 - Component relationships
 - Data flow diagrams
@@ -230,6 +247,7 @@ def process_order(order_id: str, user_id: str) -> OrderResult:
 ## Maintainability Guidelines
 
 ### Code Review Checklist
+
 - Follows SOLID principles
 - Appropriate test coverage
 - Clear documentation
@@ -238,6 +256,7 @@ def process_order(order_id: str, user_id: str) -> OrderResult:
 - Security review
 
 ### Refactoring Triggers
+
 1. Duplicate code
 2. Long methods
 3. Complex conditionals
@@ -245,6 +264,7 @@ def process_order(order_id: str, user_id: str) -> OrderResult:
 5. Poor test coverage
 
 ### Technical Debt
+
 1. Document known issues
 2. Plan regular maintenance
 3. Set clear priorities
@@ -253,12 +273,14 @@ def process_order(order_id: str, user_id: str) -> OrderResult:
 ## Version Control Best Practices
 
 ### Commit Guidelines
+
 - Clear, descriptive messages
 - Single responsibility
 - Link to issues/tickets
 - Include tests
 
 ### Branch Strategy
+
 1. main/master for production
 2. develop for integration
 3. feature/* for new features
@@ -279,12 +301,14 @@ Closes #123
 ## Review Cycle
 
 ### Regular Reviews
+
 - Architecture review meetings
 - Code quality metrics
 - Performance monitoring
 - Security assessments
 
 ### Update Process
+
 1. Collect feedback
 2. Evaluate changes
 3. Update documentation
@@ -294,6 +318,7 @@ Closes #123
 ## Metrics and Monitoring
 
 ### Key Metrics
+
 1. Code coverage
 2. Cyclomatic complexity
 3. Technical debt
@@ -301,6 +326,7 @@ Closes #123
 5. Error rates
 
 ### Monitoring Strategy
+
 1. Application metrics
 2. System resources
 3. User experience
@@ -310,6 +336,7 @@ Closes #123
 These principles guide our development process while maintaining flexibility for specific project needs. Regular reviews and updates ensure they remain relevant and effective.
 
 Remember:
+
 1. Start simple
 2. Stay focused
 3. Plan ahead

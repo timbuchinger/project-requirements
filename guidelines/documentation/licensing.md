@@ -1,6 +1,7 @@
 # Licensing Guidelines
 
-When creating or managing repositories, choosing the right license is crucial for defining how others can use, modify, and distribute your code.
+When creating or managing repositories, choosing the right license is crucial for defining how others can use, modify, and 
+distribute your code.
 
 ## Recommended Licenses
 

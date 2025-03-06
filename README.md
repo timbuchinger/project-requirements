@@ -1,6 +1,7 @@
 # Project Requirements & Best Practices
 
-A comprehensive collection of development guidelines, architectural patterns, and best practices designed to be integrated with AI coding assistants. This repository serves as a knowledge base to ensure consistent, high-quality software development across projects.
+A comprehensive collection of development guidelines, architectural patterns, and best practices designed to be integrated with
+AI coding assistants. This repository serves as a knowledge base to ensure consistent, high-quality software development.
 
 ## Purpose
 

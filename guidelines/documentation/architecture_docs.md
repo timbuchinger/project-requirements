@@ -1,7 +1,8 @@
 # Architecture Documentation Guidelines
 
 ## Overview
-This document provides guidelines for creating and maintaining architecture documentation across projects, with a focus on using visual representations to enhance understanding.
+This document provides guidelines for creating and maintaining architecture documentation across projects, with a focus on using 
+visual representations to enhance understanding.
 
 ## When to Create Architecture Documentation
 
@@ -172,7 +173,9 @@ flowchart LR
 ```
 
 ## Conclusion
-Well-structured architecture documentation with clear visual representations helps teams understand, maintain, and evolve systems effectively. Use these guidelines to create documentation that serves as a valuable resource for both current and future development efforts.
+Well-structured architecture documentation with clear visual representations helps teams understand, maintain, and evolve systems 
+effectively. Use these guidelines to create documentation that serves as a valuable resource for both current and future 
+development efforts.
 
 ## Markdown Linting
 To ensure consistency and readability across all documentation, use the standard markdown linting configuration.
@@ -196,7 +199,8 @@ To ensure consistency and readability across all documentation, use the standard
 }
 ```
 
-2. Copy the GitHub Actions workflow from `.github/workflows/markdown-lint.yml` in this repository to enforce these standards in your CI/CD pipeline. This workflow serves as a template and can be customized for your specific needs.
+2. Copy the GitHub Actions workflow from `.github/workflows/markdown-lint.yml` in this repository to enforce these standards in 
+your CI/CD pipeline. This workflow serves as a template and can be customized for your specific needs.
 
 ### Key Rules
 

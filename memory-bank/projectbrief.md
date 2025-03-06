@@ -1,7 +1,8 @@
 # Project Brief: Development Guidelines Repository
 
 ## Purpose
-This repository maintains standardized development guidelines and best practices for software projects. These guidelines ensure consistent code quality and technology choices across projects by providing clear documentation for AI assistants and developers.
+This repository maintains standardized development guidelines and best practices for software projects. These guidelines ensure
+consistent code quality and technology choices across projects by providing clear documentation for AI assistants and developers.
 
 ## Core Requirements
 - Maintain clear, comprehensive development guidelines for different technologies
