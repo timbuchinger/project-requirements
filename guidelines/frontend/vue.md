@@ -12,7 +12,6 @@ This document contains the tools that frontend projects should use.
 ## Build Tools
 
 - Vite
-- TypeScript configuration
 - PostCSS for CSS processing
 
 ## Styling
@@ -57,6 +56,4 @@ This document contains the tools that frontend projects should use.
 
 - Use `<script setup>` syntax
 - Prefer composition API
-- Props should be typed with PropType
-- Emit typings with defineEmits
 - Use defineExpose when needed
